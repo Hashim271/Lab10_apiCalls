@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10: API Calls in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>API CALLS IN JAVASCRIPT</h1>
+
+    <div class="button-grp">
+        <button id="fetchButton">Fetch Data with fetch()</button>
+        <button id="xhrButton">Fetch Data with XHR</button>
+    </div>
+
+    <section id="dataDisplay">
+        <!-- Data will be shown here -->
+    </section>
+
+    <h2>Create New Post</h2>
+    <form id="postForm">
+        <label for="postTitle">Title:</label>
+        <input type="text" id="postTitle" name="postTitle" required>
+        <label for="postBody">Body:</label>
+        <textarea id="postBody" name="postBody" required></textarea>
+        <button type="submit">SEND POST!</button>
+    </form>
+    <div id="postMessage"></div>
+
+    <h2>Update Existing Post</h2>
+    <form id="putForm">
+        <label for="putId">Post ID: <small>(LAST DIGIT 101 = 1)</small></label>
+        <input type="number" id="putId" name="putId" required>
+        <label for="putTitle">Title:</label>
+        <input type="text" id="putTitle" name="putTitle" required>
+        <label for="putBody">Body:</label>
+        <textarea id="putBody" name="putBody" required></textarea>
+        <button type="submit">SEND PUT!</button>
+    </form>
+    <div id="putMessage"></div>
+    
+</body>
+
+</html>
